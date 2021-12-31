@@ -132,8 +132,16 @@ body {
     border-radius: 7px;
 }
 
+.proceed:hover{
+    background-color: hsla(224, 72%, 45%, 0.719);
+}
+
 .cancel { line-height: 3;
     text-decoration: none;
     color:#777;
+}
+
+.cancel:hover {
+    color: #656565;
 }
 
