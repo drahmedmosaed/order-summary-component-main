@@ -84,6 +84,7 @@ body {
 .container p{
     max-width: 90%;
     margin: auto auto 20px;
+    color:#777;
 }
 
 .plan {
@@ -105,10 +106,14 @@ body {
 
 }
 .plan .type {
-    font-weight: bolder;
     position: relative;
     font-size: 100%;
     margin: auto;
+}
+
+.plan .type span{
+    font-weight: bolder;
+
 }
 
 .plan a {
@@ -127,5 +132,8 @@ body {
     border-radius: 7px;
 }
 
-.cancel { line-height: 3;}
+.cancel { line-height: 3;
+    text-decoration: none;
+    color:#777;
+}
 
