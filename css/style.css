@@ -1,0 +1,131 @@
+/*general rules*/
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --P-Font-size: 16px;
+    }
+
+* {
+    font-family: 'Red Hat Display', sans-serif;
+    margin:0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-position: top;
+    background-repeat: repeat-x;
+    background-color: var(--Pale-blue);
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+@media (max-width: 323px) {
+    .plan img{
+        display: none;
+
+    }
+}
+@media (max-width: 375px) {
+    body {
+        background-image: url("../images/pattern-background-mobile.svg");
+    }
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+    .card {
+        width: 90%;
+        margin: auto;
+    }
+}
+@media (max-width: 1440px) {
+    .container{
+        width: 375px;
+    }
+
+}
+
+
+/*end of General Rules*/
+
+.container {
+
+    background-color: white;
+    max-width: 90%;
+    border-radius: 3%;
+    margin: auto;
+    max-width:90%;
+    width:375px;
+    text-align: center;
+
+}
+
+
+
+.container img {
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.container  h1 {
+    margin-bottom: 10px;
+}
+
+.container p{
+    max-width: 90%;
+    margin: auto auto 20px;
+}
+
+.plan {
+    display: flex;
+    justify-content: space-around;
+    background-color:var(--Very-pale-blue) ;
+    max-width: 90%;
+    align-items: center;
+    height:10%;
+    border-radius: 3%;
+    margin: auto auto 10px;
+    padding: 10px;
+}
+.plan img{
+    max-width: 25%;
+    max-height: 60%;
+    align-self: center;
+    margin: auto;
+
+}
+.plan .type {
+    font-weight: bolder;
+    position: relative;
+    font-size: 100%;
+    margin: auto;
+}
+
+.plan a {
+    margin: auto;
+}
+
+.proceed {
+    display: block;
+    border: none;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    background-color: var(--Bright-blue);
+    color: white;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+.cancel { line-height: 3;}
+
